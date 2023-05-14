@@ -45,20 +45,20 @@
     display: flex;
     position: fixed;
     height: 100%;
-    width: 30rem;
+    width: 25rem;
     background-color: #148a55;
     align-items: center;
-    justify-content: center;
-
+    justify-content: flex-start;
   }
   ul {
     display: flex;
     list-style: none;
-    align-items: center;
-    flex-direction: column;
+     flex-direction: column;
     font-size: 1.75rem;
+    margin-left: 5rem;
+
     li {
-      padding: 0.5rem;
+      padding: 1rem;
 
       a {
         text-decoration: none;
