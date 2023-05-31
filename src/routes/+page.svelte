@@ -5,7 +5,7 @@
 <body>
   <Navbar />
 
-  <div id="container" class="container">
+  <div id="home-container">
     <div class="introduction">
       <img class="profilepic" src="default-profile.png" />
       <h1 class="name">E3TU</h1>
@@ -14,22 +14,22 @@
     </div>
   </div>
 
-  <div id="container2" class="container">
+  <div id="about" class="container">
     <h4>Info about me</h4>
     <h1>About Me</h1>
   </div>
 
-  <div id="container3" class="container">
+  <div id="skills" class="container">
     <h4>Why to choose me</h4>
     <h1>Skills</h1>
   </div>
 
-  <div id="container4" class="container">
+  <div id="projects" class="container">
     <h4>My work</h4>
     <h1>Projects</h1>
   </div>
 
-  <div id="container5" class="container">
+  <div id="contact" class="container">
     <h4>Get in touch</h4>
     <h1>Contact</h1>
   </div>
@@ -57,24 +57,14 @@
     background-color: $background-color;
     font-family: "Ubuntu", sans-serif;
   }
-
-  .container {
+  #home-container{
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
     height: 100vh;
     width: calc(100% - 25rem);
     margin-left: 25rem;
     flex: 1;
-    h1 {
-      color: $white;
-      margin-top: 1rem;
-      font-size: 3rem;
-    }
-    h4{
-      margin-top: 2rem;
-      color: $foreground-color;
-    }
   }
   .introduction {
     display: flex;
@@ -113,6 +103,24 @@
     &:hover {
       background-color: $foreground-color;
       transition: 0.7s;
+    }
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: calc(100% - 25rem);
+    margin-left: 25rem;
+    flex: 1;
+    h1 {
+      color: $white;
+      margin-top: 1rem;
+      font-size: 3rem;
+    }
+    h4{
+      margin-top: 2rem;
+      color: $foreground-color;
     }
   }
 </style>
