@@ -14,22 +14,22 @@
     </div>
   </div>
 
-  <div id="container2" class="container2">
+  <div id="container2" class="container">
     <h4>Info about me</h4>
     <h1>About Me</h1>
   </div>
 
-  <div id="container3" class="container3">
+  <div id="container3" class="container">
     <h4>Why to choose me</h4>
     <h1>Skills</h1>
   </div>
 
-  <div id="container4" class="container4">
+  <div id="container4" class="container">
     <h4>My work</h4>
     <h1>Projects</h1>
   </div>
 
-  <div id="container5" class="container5">
+  <div id="container5" class="container">
     <h4>Get in touch</h4>
     <h1>Contact</h1>
   </div>
@@ -61,11 +61,20 @@
   .container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
     height: 100vh;
     width: calc(100% - 25rem);
     margin-left: 25rem;
     flex: 1;
+    h1 {
+      color: $white;
+      margin-top: 1rem;
+      font-size: 3rem;
+    }
+    h4{
+      margin-top: 2rem;
+      color: $foreground-color;
+    }
   }
   .introduction {
     display: flex;
@@ -104,74 +113,6 @@
     &:hover {
       background-color: $foreground-color;
       transition: 0.7s;
-    }
-  }
-  .container2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    width: calc(100% - 25rem);
-    margin-left: 25rem;
-    h1 {
-      color: $white;
-      margin-top: 1rem;
-      font-size: 3rem;
-    }
-    h4{
-      margin-top: 2rem;
-      color: $foreground-color;
-    }
-  }
-  .container3{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    width: calc(100% - 25rem);
-    margin-left: 25rem;
-    h1 {
-      color: $white;
-      margin-top: 1rem;
-      font-size: 3rem;
-    }
-    h4{
-      margin-top: 2rem;
-      color: $foreground-color;
-    }
-  }
-  .container4{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    width: calc(100% - 25rem);
-    margin-left: 25rem;
-    h1 {
-      color: $white;
-      margin-top: 1rem;
-      font-size: 3rem;
-    }
-    h4{
-      margin-top: 2rem;
-      color: $foreground-color;
-    }
-  }
-  .container5{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    width: calc(100% - 25rem);
-    margin-left: 25rem;
-    h1 {
-      color: $white;
-      margin-top: 1rem;
-      font-size: 3rem;
-    }
-    h4{
-      margin-top: 2rem;
-      color: $foreground-color;
     }
   }
 </style>
