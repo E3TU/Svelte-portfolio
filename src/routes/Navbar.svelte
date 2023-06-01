@@ -2,10 +2,10 @@
   <nav>
     <ul>
       <li><a href="#">Home</a></li>
-      <li><a href="#container2">About me</a></li>
-      <li><a href="#container3">Skills</a></li>
-      <li><a href="#container4">Projects</a></li>
-      <li><a href="#container5">Contact</a></li>
+      <li><a href="#about">About me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 </header>

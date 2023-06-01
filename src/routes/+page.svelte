@@ -1,5 +1,7 @@
 <script>
   import Navbar from "./Navbar.svelte";
+  // import Fa from "svelte-fa";
+  // import { faJs } from "@fortawesome/free-brands-svg-icons";
 </script>
 
 <body>
@@ -17,11 +19,36 @@
   <div id="about" class="container">
     <h4>Info about me</h4>
     <h1>About Me</h1>
+    <div class="aboutme">
+      <p>
+        Hello &#x1F44B;, My name is Eetu, I am a passionate software developer currently studying in the field. I am interested in web and Android development and also Linux.
+        In my free time i like to code and exercise. I have built multiple websites/apps and also some android apps.
+      </p>
+      <h3>Experience</h3>
+      <p class="experiencetext">I have about 2-years of experience in Software Development field. I have done different kinds of projects on my free time, learned some coding at school and also had two interships in software companies. Most of my coding knowledge is from interships and making my own projects in free time.</p>
+    </div>
   </div>
 
   <div id="skills" class="container">
     <h4>Why to choose me</h4>
     <h1>Skills</h1>
+    <div class="myskills">
+      <div class="box">
+        <h1>Web</h1>
+        <p>Html, Css, Javascript, Scss</p>
+        <p>NodeJs, Svelte, Express</p>
+        <p>MongoDB, MySQL</p>
+      </div>
+      <div class="box">
+        <h1>Mobile</h1>
+        <p>Android, Kotlin</p>
+      </div>
+      <div class="box">
+        <h1>Other</h1>
+        <p>Linux, Bash</p>
+        <p>C#</p>
+      </div>
+    </div>
   </div>
 
   <div id="projects" class="container">
@@ -122,5 +149,47 @@
       margin-top: 2rem;
       color: $foreground-color;
     }
+  }
+  #about{
+    height: 100vh !important;
+  }
+  .aboutme{
+    height: auto;
+    width: 40rem;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    p{
+      color: $white;
+    }
+    h3{
+      margin-top: 1rem;
+      color: $foreground-color;
+    }
+    .experiencetext{
+      margin-top: 1rem;
+    }
+  }
+
+  .myskills{
+    display: flex;
+    gap: 2rem;
+    h1{
+      margin-left: 1rem;
+      font-size: 2rem;
+    }
+    p{
+      color: $foreground-color;
+      margin-left: 1rem;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+  }
+  .box{
+    margin-top: 5rem;
+    width: 20rem;
+    height: 22rem;
+    background-color: $background-color;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 29px 0px;
+    border-radius: 6px;
   }
 </style>
