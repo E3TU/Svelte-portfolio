@@ -54,6 +54,26 @@
   <div id="projects" class="container">
     <h4>My work</h4>
     <h1>Projects</h1>
+    <div class="flexcontainer">
+      <div class="project">
+        <h1>Android password generator</h1>
+        <p>Simple password generator app made for Android using Kotlin. The app has simple gui and adjustable password length.</p>
+        <a class="github-link" href="https://github.com/E3TU/Android-passwordgen">Github</a>
+      </div>
+      <div class="project">
+        <h1>Javascript Todo App</h1>
+        <p>Todo app made with VanillaJS. Uses localstorage to save the tasks. Tasks can be deleted and edited.</p>
+        <a class="github-link" href="https://github.com/E3TU/TodoApp">Github</a>
+      </div>
+      <div class="project">
+        <h1>Javascript Clock App</h1>
+        <p>Clock app made with VanillaJS. Has both analog and digital clock as well as dark and light modes.</p>
+        <a class="github-link" href="https://github.com/E3TU/clock">Github</a>
+      </div>
+      <div class="project">
+        <h1>Under work...</h1>
+      </div>
+    </div>
   </div>
 
   <div id="contact" class="container">
@@ -69,6 +89,7 @@
   $white: #ffffff;
   $black: #000;
   $lighter-gray: #252525;
+  $rounded-border: 6px;
 
 
   * {
@@ -122,7 +143,7 @@
     color: $white;
     background-color: transparent;
     padding: 15px 45px;
-    border-radius: 6px;
+    border-radius: $rounded-border;
     font-size: 1.2rem;
     margin-top: 2rem;
     border: 2px solid $foreground-color;
@@ -189,7 +210,54 @@
     width: 20rem;
     height: 22rem;
     background-color: $background-color;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 29px 0px;
-    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: $rounded-border;
+  }
+  .flexcontainer{
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 70rem;
+  }
+  .project{
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    width: 30rem;
+    background-color: $background-color;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: $rounded-border;
+    h1{
+      font-size: 1.5rem;
+      margin-left: 1rem;
+      color: $foreground-color;
+    }
+    p{
+      margin-left: 1.2rem;
+      margin-top: 1rem;
+      color: $white;
+      line-height: 1.25;
+      flex: 1;
+      width: 25rem;
+    }
+  }
+  .github-link{
+    text-decoration: none;
+    color: $white;
+    padding: 10px 24px;
+    background-color: transparent;
+    border-radius: $rounded-border;
+    max-width: min-content;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid $foreground-color;
+    transition: 0.5s;
+    &:hover{
+      background-color: $foreground-color;
+      transition: 0.5s;
+    }
   }
 </style>
