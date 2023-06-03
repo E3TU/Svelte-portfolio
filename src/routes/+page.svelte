@@ -2,6 +2,7 @@
   import Navbar from "./Navbar.svelte";
   // import Fa from "svelte-fa";
   // import { faJs } from "@fortawesome/free-brands-svg-icons";
+  export const prerender = true
 </script>
 
 <body>
@@ -21,11 +22,19 @@
     <h1>About Me</h1>
     <div class="aboutme">
       <p>
-        Hello &#x1F44B;, My name is Eetu, I am a passionate software developer currently studying in the field. I am interested in web and Android development and also Linux.
-        In my free time i like to code and exercise. I have built multiple websites/apps and also some android apps.
+        Hello &#x1F44B;, My name is Eetu, I am a passionate software developer
+        currently studying in the field. I am interested in web and Android
+        development and also Linux. In my free time i like to code and exercise.
+        I have built multiple websites/apps and also some android apps.
       </p>
       <h3>Experience</h3>
-      <p class="experiencetext">I have about 2-years of experience in Software Development field. I have done different kinds of projects on my free time, learned some coding at school and also had two interships in software companies. Most of my coding knowledge is from interships and making my own projects in free time.</p>
+      <p class="experiencetext">
+        I have about 2-years of experience in Software Development field. I have
+        done different kinds of projects on my free time, learned some coding at
+        school and also had two interships in software companies. Most of my
+        coding knowledge is from interships and making my own projects in free
+        time.
+      </p>
     </div>
   </div>
 
@@ -57,17 +66,29 @@
     <div class="flexcontainer">
       <div class="project">
         <h1>Android password generator</h1>
-        <p>Simple password generator app made for Android using Kotlin. The app has simple gui and adjustable password length.</p>
-        <a class="github-link" href="https://github.com/E3TU/Android-passwordgen">Github</a>
+        <p>
+          Simple password generator app made for Android using Kotlin. The app
+          has simple gui and adjustable password length.
+        </p>
+        <a
+          class="github-link"
+          href="https://github.com/E3TU/Android-passwordgen">Github</a
+        >
       </div>
       <div class="project">
         <h1>Javascript Todo App</h1>
-        <p>Todo app made with VanillaJS. Uses localstorage to save the tasks. Tasks can be deleted and edited.</p>
+        <p>
+          Todo app made with VanillaJS. Uses localstorage to save the tasks.
+          Tasks can be deleted and edited.
+        </p>
         <a class="github-link" href="https://github.com/E3TU/TodoApp">Github</a>
       </div>
       <div class="project">
         <h1>Javascript Clock App</h1>
-        <p>Clock app made with VanillaJS. Has both analog and digital clock as well as dark and light modes.</p>
+        <p>
+          Clock app made with VanillaJS. Has both analog and digital clock as
+          well as dark and light modes.
+        </p>
         <a class="github-link" href="https://github.com/E3TU/clock">Github</a>
       </div>
       <div class="project">
@@ -79,6 +100,36 @@
   <div id="contact" class="container">
     <h4>Get in touch</h4>
     <h1>Contact</h1>
+    <div class="contactcontainer">
+      <form
+        class="contactform"
+        name="contactform"
+        method="POST"
+        data-netlify="true"
+      >
+        <div class="labelcontainer">
+          <p>
+            <label>Name<input type="text" name="name" class="name" /></label>
+          </p>
+        </div>
+        <div class="labelcontainer">
+          <p>
+            <label>Email<input type="email" name="email" /></label>
+          </p>
+        </div>
+        <div class="labelcontainer">
+          <p>
+            <label>Message<textarea name="message" /></label>
+          </p>
+        </div>
+        <br />
+        <div class="labelcontainer">
+          <p>
+            <button id="submit" type="submit">Send</button>
+          </p>
+        </div>
+      </form>
+    </div>
   </div>
 </body>
 
@@ -90,7 +141,6 @@
   $black: #000;
   $lighter-gray: #252525;
   $rounded-border: 6px;
-
 
   * {
     font-family: sans-serif;
@@ -105,7 +155,7 @@
     background-color: $background-color;
     font-family: "Ubuntu", sans-serif;
   }
-  #home-container{
+  #home-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -166,54 +216,56 @@
       margin-top: 1rem;
       font-size: 3rem;
     }
-    h4{
+    h4 {
       margin-top: 2rem;
       color: $foreground-color;
     }
   }
-  #about{
+  #about {
     height: 100vh !important;
   }
-  .aboutme{
+  .aboutme {
     height: auto;
     width: 40rem;
     margin-top: 2rem;
     font-size: 1.25rem;
-    p{
+    p {
       color: $white;
     }
-    h3{
+    h3 {
       margin-top: 1rem;
       color: $foreground-color;
     }
-    .experiencetext{
+    .experiencetext {
       margin-top: 1rem;
     }
   }
 
-  .myskills{
+  .myskills {
     display: flex;
     gap: 2rem;
-    h1{
+    h1 {
       margin-left: 1rem;
       font-size: 2rem;
     }
-    p{
+    p {
       color: $foreground-color;
       margin-left: 1rem;
       margin-top: 1rem;
       font-weight: bold;
     }
   }
-  .box{
+  .box {
     margin-top: 5rem;
     width: 20rem;
     height: 22rem;
     background-color: $background-color;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: $rounded-border;
   }
-  .flexcontainer{
+  .flexcontainer {
     margin-top: 4rem;
     display: flex;
     flex-wrap: wrap;
@@ -222,20 +274,22 @@
     gap: 2rem;
     width: 70rem;
   }
-  .project{
+  .project {
     display: flex;
     flex-direction: column;
     height: 15rem;
     width: 30rem;
     background-color: $background-color;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: $rounded-border;
-    h1{
+    h1 {
       font-size: 1.5rem;
       margin-left: 1rem;
       color: $foreground-color;
     }
-    p{
+    p {
       margin-left: 1.2rem;
       margin-top: 1rem;
       color: $white;
@@ -244,7 +298,7 @@
       width: 25rem;
     }
   }
-  .github-link{
+  .github-link {
     text-decoration: none;
     color: $white;
     padding: 10px 24px;
@@ -254,6 +308,69 @@
     margin-left: 1rem;
     margin-bottom: 1rem;
     border: 2px solid $foreground-color;
+    transition: 0.5s;
+    &:hover {
+      background-color: $foreground-color;
+      transition: 0.5s;
+    }
+  }
+  .contactcontainer {
+    display: flex;
+    height: auto;
+    width: 30rem;
+    justify-content: center;
+    h3 {
+      color: $foreground-color;
+      margin-top: 1rem;
+    }
+  }
+  .contactform {
+    position: relative;
+    margin-top: 6rem;
+    color: #fff;
+    width: 26rem;
+    height: auto;
+    p {
+      font-size: 3rem;
+    }
+  }
+  .contactform input {
+    height: 3rem;
+    font-size: 1.5rem;
+    display: block;
+    margin: auto;
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    padding-left: 0.2rem;
+  }
+  .contactform textarea {
+    height: 6rem;
+    font-size: 1.5rem;
+    display: block;
+    margin: auto;
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    padding-left: 0.2rem;
+  }
+  .labelcontainer {
+    width: 25rem;
+    text-align: left;
+    margin: auto;
+  }
+  #submit {
+    text-decoration: none;
+    color: $white;
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 2px solid $foreground-color;
+    border-radius: $rounded-border;
+    font-size: 1rem;
     transition: 0.5s;
     &:hover{
       background-color: $foreground-color;
