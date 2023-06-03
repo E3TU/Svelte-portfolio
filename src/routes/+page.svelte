@@ -2,7 +2,6 @@
   import Navbar from "./Navbar.svelte";
   // import Fa from "svelte-fa";
   // import { faJs } from "@fortawesome/free-brands-svg-icons";
-  export const prerender = true
 </script>
 
 <body>
