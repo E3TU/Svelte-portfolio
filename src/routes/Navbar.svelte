@@ -18,7 +18,7 @@
   $black: #000;
   $lighter-gray: #252525;
 
-  .navbar {
+  .navbar{
     display: flex;
     position: fixed;
     height: 100%;
@@ -47,4 +47,9 @@
       }
     }
   }
+  // @media only screen and (max-width: 1499px) {
+  //   .navbar {
+  //     display: none;
+  //   }
+  // }
 </style>

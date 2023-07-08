@@ -376,4 +376,43 @@
       transition: 0.5s;
     }
   }
+  @media only screen and (max-width: 1499px) {
+    #home-container{
+
+    }
+    // .container{
+    //   // justify-content: center;
+    //   align-items: center;
+    //   margin-left: 0;
+    //   width: 100%;
+    // }
+    .flexcontainer{
+      width: 60rem;
+    }
+    .project{
+      width: 25rem;
+    }
+    .box{
+      width: 18rem;
+    }
+  }
+  @media only screen and (max-width: 1360px) {
+    .box{
+      width: 16rem;
+    }
+  }
+  @media only screen and (max-width: 1320px) {
+    .myskills{
+      width: 40rem;
+    }
+    .box{
+      width: 14rem;
+    }
+    .flexcontainer{
+      width: 50rem;
+    }
+    .project{
+      width: 40rem;
+    }
+  }
 </style>
