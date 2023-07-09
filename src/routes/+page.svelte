@@ -402,17 +402,31 @@
     }
   }
   @media only screen and (max-width: 1320px) {
-    .myskills{
-      width: 40rem;
-    }
-    .box{
-      width: 14rem;
-    }
     .flexcontainer{
       width: 50rem;
     }
     .project{
       width: 40rem;
+    }
+    #contact{
+      margin-top: 25rem;
+    }
+  }
+  @media only screen and (max-width: 1259px) {
+    .myskills{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      width: 30rem;
+    }
+    .box{
+      margin-top: 2rem;
+      width: 30rem;
+      height: 15rem;
+    }
+    #projects{
+      margin-top: 10rem;
     }
   }
 </style>
