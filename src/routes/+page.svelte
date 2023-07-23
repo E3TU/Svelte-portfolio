@@ -1,3 +1,7 @@
+<script>
+  let name = "E3TU";
+</script>
+
 <svelte:head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -6,7 +10,7 @@
 
 <body>
   <div class="flexbox">
-    <h1>E3TU</h1>
+    <h1>{name}</h1>
     <div class="terminal">
       <div class="titlebar">
         <div class="buttons">
@@ -14,6 +18,30 @@
           <button id="maximize" class="window-button" />
           <button id="close" class="window-button" />
         </div>
+      </div>
+      <div class="introduction">
+        <h3>{name}:~$ <span class="whitetext">introduction</span></h3>
+        <h5>Hello👋, I'm Eetu, Software developer from Finland</h5>
+      </div>
+      <div class="about">
+        <h3>{name}:~$ <span class="whitetext">about me</span></h3>
+        <div class="aboutmetext">
+          <h5>My name is Eetu, I am a passionate software developer
+            currently studying in the field. I am interested in web and Android
+            development and also Linux. In my free time i like to code and exercise.
+            I have built multiple websites/apps and also some android apps.
+          </h5>
+        </div>
+      </div>
+      <div class="skills">
+        <h3>{name}:~$ <span class="whitetext">skills</span></h3>
+        <h5></h5>
+      </div>
+      <div class="projects">
+
+      </div>
+      <div class="contact">
+
       </div>
     </div>
   </div>
@@ -71,6 +99,16 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      h3{
+        color: $foreground-color;
+        margin-top: 1rem;
+        margin-left: 1rem;
+      }
+      h5{
+        color: $white;
+        margin-top: 1rem;
+        margin-left: 1rem;
+      }
   }
   .titlebar {
     display: flex;
@@ -103,5 +141,17 @@
   }
   #minimize{
     background-color: $green;
+  }
+  .home{
+    width: 100%;
+    height: auto;
+  }
+  .whitetext{
+    color: $white;
+  }
+  .aboutmetext{
+    width: 60%;
+    line-height: 1.5;
+    letter-spacing: 0.05rem;
   }
 </style>
