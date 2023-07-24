@@ -26,23 +26,40 @@
       <div class="about">
         <h3>{name}:~$ <span class="whitetext">about me</span></h3>
         <div class="aboutmetext">
-          <h5>My name is Eetu, I am a passionate software developer
-            currently studying in the field. I am interested in web and Android
-            development and also Linux. In my free time i like to code and exercise.
-            I have built multiple websites/apps and also some android apps.
+          <h5>
+            My name is Eetu, I am a passionate software developer currently
+            studying in the field. I am interested in web and Android
+            development and also Linux. In my free time i like to code and
+            exercise. I have built multiple websites&webapps and also some
+            android apps.
           </h5>
         </div>
       </div>
       <div class="skills">
         <h3>{name}:~$ <span class="whitetext">skills</span></h3>
-        <h5></h5>
+        <div class="flex-item">
+          <h4>Web</h4>
+          <h5>Html</h5>
+          <h5>Css</h5>
+          <h5>Javascript</h5>
+          <h5>NodeJs</h5>
+          <h5>Svelte</h5>
+        </div>
+        <div class="flex-item">
+          <h4>Mobile</h4>
+          <h5>Android</h5>
+          <h5>Kotlin</h5>
+        </div>
+        <div class="flex-item">
+          <h4>Other</h4>
+          <h5>C#</h5>
+          <h5>Linux</h5>
+        </div>
       </div>
       <div class="projects">
-
+        <h3>{name}:~$ <span class="whitetext">projects</span></h3>
       </div>
-      <div class="contact">
-
-      </div>
+      <div class="contact" />
     </div>
   </div>
 </body>
@@ -99,16 +116,21 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-      h3{
-        color: $foreground-color;
-        margin-top: 1rem;
-        margin-left: 1rem;
-      }
-      h5{
-        color: $white;
-        margin-top: 1rem;
-        margin-left: 1rem;
-      }
+    h3 {
+      color: $foreground-color;
+      margin-top: 1rem;
+      margin-left: 1rem;
+    }
+    h4 {
+      color: $white;
+      margin-top: 1rem;
+      margin-left: 1rem;
+    }
+    h5 {
+      color: $white;
+      margin-top: 1rem;
+      margin-left: 1rem;
+    }
   }
   .titlebar {
     display: flex;
@@ -121,37 +143,47 @@
     flex-direction: column;
     align-items: flex-end;
   }
-  .buttons{
+  .buttons {
     margin-right: 1rem;
   }
   .window-button {
-    width: .80rem;
-    height: .80rem;
+    width: 0.8rem;
+    height: 0.8rem;
     border: none;
     border-radius: 50%;
-    &:hover{
+    &:hover {
       opacity: 0.8;
     }
   }
-  #close{
+  #close {
     background-color: $red;
   }
-  #maximize{
+  #maximize {
     background-color: $yellow;
   }
-  #minimize{
+  #minimize {
     background-color: $green;
   }
-  .home{
-    width: 100%;
-    height: auto;
-  }
-  .whitetext{
+  .whitetext {
     color: $white;
   }
-  .aboutmetext{
+  .aboutmetext {
     width: 60%;
     line-height: 1.5;
-    letter-spacing: 0.05rem;
+    // letter-spacing: 0.05rem;
+  }
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    h3{
+      width: 100%;
+    }
+    h5 {
+      margin-top: 0.5rem !important;
+    }
+  }
+  .flex-item{
+    width: 8rem;
   }
 </style>
