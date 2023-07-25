@@ -1,7 +1,7 @@
 import { vitePreprocess } from "@sveltejs/kit/vite";
 import adapter from "@sveltejs/adapter-auto";
 
-const dev = process.argv.includes('dev');
+const isDev = process.env.NODE_ENV === 'development';
 
 
 
@@ -13,8 +13,8 @@ const config = {
     // See https://kit.svelte.dev/docs/adapters for more information about adapters.
     adapter: adapter(),
     paths: {
-      base: dev ? '' : '/e3tu.github.io',
-  }
+      base: isDev ? '' : '',
+    }
   },
 
   preprocess: [vitePreprocess({})],
