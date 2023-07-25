@@ -93,6 +93,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: "Ubuntu", sans-serif;
   }
   body {
     padding: 0;
