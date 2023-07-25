@@ -75,7 +75,13 @@
           <a href="https://github.com/E3TU/Bash-random-password-generator">GitHub</a>
         </div>
       </div>
-      <div class="contact" />
+      <div class="contact">
+        <h3>{name}:~$ <span class="whitetext">Contact</span></h3>
+        <h4>You can contact me via my email alias: <a href="mailto:e3tu.1bhe3@slmail.me">e3tu.1bhe3@slmail.me</a></h4>
+      </div>
+      <div class="end">
+        <h3>{name}:~$ <span class="whitetext"></span></h3>
+      </div>
     </div>
   </div>
 </body>
@@ -127,7 +133,7 @@
     background-color: $background-color;
     margin-top: 3rem;
     width: 60rem;
-    height: 45rem;
+    height: 42rem;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -222,5 +228,10 @@
   }
   .project-item{
     width: auto;
+  }
+  .contact{
+    a{
+      color: $foreground-color;
+    }
   }
 </style>
