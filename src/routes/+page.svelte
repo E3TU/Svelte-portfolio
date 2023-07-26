@@ -54,6 +54,7 @@
           <h4>Other</h4>
           <h5>C#</h5>
           <h5>Linux</h5>
+          <h5>Bash</h5>
         </div>
       </div>
       <div class="projects">
