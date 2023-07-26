@@ -21,18 +21,18 @@
       </div>
       <div class="introduction">
         <h3>{name}:~$ <span class="whitetext">introduction</span></h3>
-        <h5>Hello👋, I'm Eetu, Software developer from Finland</h5>
+        <h4>Hello👋, I'm Eetu, Software developer from Finland</h4>
       </div>
       <div class="about">
         <h3>{name}:~$ <span class="whitetext">about me</span></h3>
         <div class="aboutmetext">
-          <h5>
+          <h4>
             My name is Eetu, I am a passionate software developer currently
             studying in the field. I am interested in web and Android
             development and also Linux. In my free time i like to code and
             exercise. I have built multiple websites&webapps and also some
             android apps.
-          </h5>
+          </h4>
         </div>
       </div>
       <div class="skills">
@@ -133,8 +133,8 @@
   .terminal {
     background-color: $background-color;
     margin-top: 3rem;
-    width: 60rem;
-    height: 42rem;
+    width: 65rem;
+    height: 50rem;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -143,11 +143,13 @@
       color: $foreground-color;
       margin-top: 1rem;
       margin-left: 1rem;
+      font-size: 1.5rem;
     }
     h4 {
       color: $white;
       margin-top: 1rem;
       margin-left: 1rem;
+      font-size: 1rem;
     }
     h5 {
       color: $white;
