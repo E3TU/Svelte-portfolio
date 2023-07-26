@@ -239,4 +239,25 @@
       color: $foreground-color;
     }
   }
+  @media only screen and (max-width: 1076px) {
+    .terminal{
+      width: 50rem;
+    }
+  }
+  @media only screen and (max-width: 850px) {
+    .terminal{
+      width: 40rem;
+    }
+    .end{
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 680px) {
+    .terminal{
+      width: 30rem;
+      height: auto;
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
 </style>
