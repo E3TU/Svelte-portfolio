@@ -100,6 +100,7 @@
     margin: 0;
     background-color: $background-color;
     font-family: "Ubuntu", sans-serif;
+    letter-spacing: 0.05rem;
   }
   .flexbox {
     display: flex;
