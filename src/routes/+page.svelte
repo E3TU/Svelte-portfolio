@@ -258,6 +258,33 @@
       height: auto;
       padding-bottom: 2rem;
       margin-bottom: 2rem;
+      h3{
+        font-size: 1rem;
+      }
+      h4{
+        font-size: 0.9rem;
+      }
+    }
+  }
+  @media only screen and (max-width: 525px) {
+    .terminal{
+      width: 25rem;
+      margin-bottom: 1rem;
+    }
+    .flexbox{
+      h1{
+        margin-top: 1.6rem;
+      }
+    }
+  }
+  @media only screen and (max-width: 440px) {
+    .terminal{
+      width: 22rem;
+    }
+  }
+  @media only screen and (max-width: 380px) {
+    .terminal{
+      width: 20rem;
     }
   }
 </style>
