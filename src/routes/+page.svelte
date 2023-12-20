@@ -113,6 +113,7 @@
       color: $foreground-color;
       position: relative; /* Set position to relative to allow cursor positioning */
       display: inline-block; /* To make the cursor pseudo-element inline */
+      text-shadow: 1px 1px $black;
       &::after {
         content: "▌"; /* Cursor content */
         position: absolute;
@@ -120,6 +121,7 @@
         left: 100%; /* Position cursor after the "User" text */
         animation: blink 1s infinite; /* CSS animation for blinking effect */
         color: $foreground-color;
+        text-shadow: 1px 1px $black;
       }
     }
   }
@@ -133,10 +135,10 @@
     }
   }
   .terminal {
-    background-color: $background-color;
+    background-color: $gray;
     margin-top: 3rem;
     width: 65rem;
-    height: 50rem;
+    height: 47rem;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -162,7 +164,7 @@
   .titlebar {
     display: flex;
     justify-content: center;
-    background-color: #101010;
+    background-color: $black;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 100%;
