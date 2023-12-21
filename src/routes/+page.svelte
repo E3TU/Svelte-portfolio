@@ -72,8 +72,8 @@
           <a href="https://github.com/E3TU/clock">GitHub</a>
         </div>
         <div class="project-item">
-          <h4>Bash random password generator</h4>
-          <a href="https://github.com/E3TU/Bash-random-password-generator">GitHub</a>
+          <h4>Svelte WeatherApp</h4>
+          <a href="https://github.com/E3TU/WeatherApp">GitHub</a>
         </div>
       </div>
       <div class="contact">
@@ -135,8 +135,10 @@
   .terminal {
     background-color: $gray;
     margin-top: 3rem;
+    margin-bottom: 2rem;
     width: 65rem;
-    height: 47rem;
+    height: auto;
+    padding-bottom: 2rem;
     border-radius: 10px;
     // box-shadow: 0px 0px 50px $foreground-color;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
