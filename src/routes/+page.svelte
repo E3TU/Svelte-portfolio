@@ -138,7 +138,8 @@
     width: 65rem;
     height: 47rem;
     border-radius: 10px;
-    border: 5px solid $foreground-color;
+    // box-shadow: 0px 0px 50px $foreground-color;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     h3 {
       color: $foreground-color;
       margin-top: 1rem;
