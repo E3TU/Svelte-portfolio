@@ -1,5 +1,13 @@
 <script>
-  let name = "E3TU";
+  import { name } from "../store/store";
+
+  // Import components
+  import Introduction from "../components/Introduction.svelte";
+  import About from "../components/About.svelte";
+  import Skills from "../components/Skills.svelte";
+  import Projects from "../components/Projects.svelte";
+  import Contact from "../components/Contact.svelte";
+  import Footer from "../components/Footer.svelte";
 </script>
 
 <svelte:head>
@@ -10,7 +18,7 @@
 
 <body>
   <div class="flexbox">
-    <h1>{name}</h1>
+    <h1>{$name}</h1>
     <div class="terminal">
       <div class="titlebar">
         <div class="buttons">
@@ -19,90 +27,19 @@
           <button id="close" class="window-button" />
         </div>
       </div>
-      <div class="introduction">
-        <h3>{name}:~$ <span class="whitetext">introduction</span></h3>
-        <h4>Hello👋, I'm Eetu, Software developer from Finland</h4>
-      </div>
-      <div class="about">
-        <h3>{name}:~$ <span class="whitetext">about me</span></h3>
-        <div class="aboutmetext">
-          <h4>
-            My name is Eetu, I am a passionate software developer currently
-            studying in the field. I am interested in web and Android
-            development and also Linux. In my free time i like to code and
-            exercise. I have built multiple websites&webapps and also some
-            android apps.
-          </h4>
-        </div>
-      </div>
-      <div class="skills">
-        <h3>{name}:~$ <span class="whitetext">skills</span></h3>
-        <div class="flex-item">
-          <h4>Web</h4>
-          <h5>Html</h5>
-          <h5>Css</h5>
-          <h5>Javascript</h5>
-          <h5>NodeJs</h5>
-          <h5>Svelte</h5>
-        </div>
-        <div class="flex-item">
-          <h4>Mobile</h4>
-          <h5>Android</h5>
-          <h5>Kotlin</h5>
-        </div>
-        <div class="flex-item">
-          <h4>Other</h4>
-          <h5>C#</h5>
-          <h5>Linux</h5>
-          <h5>Bash</h5>
-        </div>
-      </div>
-      <div class="projects">
-        <h3>{name}:~$ <span class="whitetext">projects</span></h3>
-        <div class="project-item">
-          <h4>Android password generator</h4>
-          <a href="https://github.com/E3TU/Android-passwordgen">GitHub</a>
-        </div>
-        <div class="project-item">
-          <h4>Javascript todo app</h4>
-          <a href="https://github.com/E3TU/TodoApp">GitHub</a>
-        </div>
-        <div class="project-item">
-          <h4>Javascript clock app</h4>
-          <a href="https://github.com/E3TU/clock">GitHub</a>
-        </div>
-        <div class="project-item">
-          <h4>Svelte WeatherApp</h4>
-          <a href="https://github.com/E3TU/WeatherApp">GitHub</a>
-        </div>
-      </div>
-      <div class="contact">
-        <h3>{name}:~$ <span class="whitetext">Contact</span></h3>
-        <h4>You can contact me via my email alias: <a href="mailto:e3tu.1bhe3@slmail.me">e3tu.1bhe3@slmail.me</a></h4>
-      </div>
-      <div class="end">
-        <h3>{name}:~$ <span class="whitetext"></span></h3>
-      </div>
+      <!--Components-->
+      <Introduction />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   </div>
 </body>
 
 <style lang="scss">
-  @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
-  * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: "Ubuntu", sans-serif;
-  }
-  body {
-    padding: 0;
-    margin: 0;
-    background-color: $background-color;
-    font-family: "Ubuntu", sans-serif;
-    letter-spacing: 0.05rem;
-  }
   .flexbox {
     display: flex;
     flex-direction: column;
@@ -141,24 +78,9 @@
     padding-bottom: 2rem;
     border-radius: 10px;
     // box-shadow: 0px 0px 50px $foreground-color;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    h3 {
-      color: $foreground-color;
-      margin-top: 1rem;
-      margin-left: 1rem;
-      font-size: 1.5rem;
-    }
-    h4 {
-      color: $white;
-      margin-top: 1rem;
-      margin-left: 1rem;
-      font-size: 1rem;
-    }
-    h5 {
-      color: $white;
-      margin-top: 1rem;
-      margin-left: 1rem;
-    }
+    box-shadow:
+      rgba(0, 0, 0, 0.25) 0px 14px 28px,
+      rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
   .titlebar {
     display: flex;
@@ -192,100 +114,43 @@
   #minimize {
     background-color: $green;
   }
-  .whitetext {
-    color: $white;
-  }
-  .aboutmetext {
-    width: 60%;
-    line-height: 1.5;
-    // letter-spacing: 0.05rem;
-  }
-  .skills {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    h3{
-      width: 100%;
-    }
-    h5 {
-      margin-top: 0.5rem !important;
-    }
-  }
-  .flex-item{
-    width: 8rem;
-  }
-  .projects{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    h3{
-      width: 100%;
-    }
-    h4{
-      margin-left: 1rem;
-      color: $foreground-color;
-    }
-    a{
-      margin-left: 1rem;
-      background-color: transparent;
-      color: $white;
-      font-size: 0.8rem;
-    }
-  }
-  .project-item{
-    width: auto;
-  }
-  .contact{
-    a{
-      color: $foreground-color;
-    }
-  }
   @media only screen and (max-width: 1076px) {
-    .terminal{
-      width: 50rem;
+  .terminal {
+    width: 50rem;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .terminal {
+    width: 40rem;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .terminal {
+    width: 30rem;
+    height: auto;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 525px) {
+  .terminal {
+    width: 25rem;
+    margin-bottom: 1rem;
+  }
+  .flexbox {
+    h1 {
+      margin-top: 1.6rem;
     }
   }
-  @media only screen and (max-width: 850px) {
-    .terminal{
-      width: 40rem;
-    }
-    .end{
-      display: none;
-    }
+}
+@media only screen and (max-width: 440px) {
+  .terminal {
+    width: 22rem;
   }
-  @media only screen and (max-width: 680px) {
-    .terminal{
-      width: 30rem;
-      height: auto;
-      padding-bottom: 2rem;
-      margin-bottom: 2rem;
-      h3{
-        font-size: 1rem;
-      }
-      h4{
-        font-size: 0.9rem;
-      }
-    }
+}
+@media only screen and (max-width: 380px) {
+  .terminal {
+    width: 20rem;
   }
-  @media only screen and (max-width: 525px) {
-    .terminal{
-      width: 25rem;
-      margin-bottom: 1rem;
-    }
-    .flexbox{
-      h1{
-        margin-top: 1.6rem;
-      }
-    }
-  }
-  @media only screen and (max-width: 440px) {
-    .terminal{
-      width: 22rem;
-    }
-  }
-  @media only screen and (max-width: 380px) {
-    .terminal{
-      width: 20rem;
-    }
-  }
+}
 </style>
