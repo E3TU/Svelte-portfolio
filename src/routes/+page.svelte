@@ -47,16 +47,17 @@
     justify-content: center;
     h1 {
       margin-top: 3rem;
-      color: $foreground-color;
+      color: $white;
       position: relative; /* Set position to relative to allow cursor positioning */
       display: inline-block; /* To make the cursor pseudo-element inline */
+      text-shadow: 1px 1px 2px black;
       &::after {
         content: "▌"; /* Cursor content */
         position: absolute;
         bottom: 0;
         left: 100%; /* Position cursor after the "User" text */
         animation: blink 1s infinite; /* CSS animation for blinking effect */
-        color: $foreground-color;
+        color: $white;
       }
     }
   }
