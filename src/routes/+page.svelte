@@ -39,6 +39,17 @@
 </body>
 
 <style lang="scss">
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background: url("blurry-gradient-haikei.svg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: "Ubuntu", sans-serif;
+    letter-spacing: 0.05rem;
+  }
 
   .flexbox {
     display: flex;
@@ -116,42 +127,42 @@
     background-color: $green;
   }
   @media only screen and (max-width: 1076px) {
-  .terminal {
-    width: 50rem;
-  }
-}
-@media only screen and (max-width: 850px) {
-  .terminal {
-    width: 40rem;
-  }
-}
-@media only screen and (max-width: 680px) {
-  .terminal {
-    width: 30rem;
-    height: auto;
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
-  }
-}
-@media only screen and (max-width: 525px) {
-  .terminal {
-    width: 25rem;
-    margin-bottom: 1rem;
-  }
-  .flexbox {
-    h1 {
-      margin-top: 1.6rem;
+    .terminal {
+      width: 50rem;
     }
   }
-}
-@media only screen and (max-width: 440px) {
-  .terminal {
-    width: 22rem;
+  @media only screen and (max-width: 850px) {
+    .terminal {
+      width: 40rem;
+    }
   }
-}
-@media only screen and (max-width: 380px) {
-  .terminal {
-    width: 20rem;
+  @media only screen and (max-width: 680px) {
+    .terminal {
+      width: 30rem;
+      height: auto;
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+    }
   }
-}
+  @media only screen and (max-width: 525px) {
+    .terminal {
+      width: 25rem;
+      margin-bottom: 1rem;
+    }
+    .flexbox {
+      h1 {
+        margin-top: 1.6rem;
+      }
+    }
+  }
+  @media only screen and (max-width: 440px) {
+    .terminal {
+      width: 22rem;
+    }
+  }
+  @media only screen and (max-width: 380px) {
+    .terminal {
+      width: 20rem;
+    }
+  }
 </style>
