@@ -43,7 +43,7 @@
   body {
     padding: 0;
     margin: 0;
-    background: url("/blurry-gradient-haikei.svg");
+    background: url("/gradient.svg");
     background-position: center;
     background-size: cover;
     height: 100vh;
