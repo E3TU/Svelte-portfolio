@@ -39,11 +39,11 @@
 </body>
 
 <style lang="scss">
-  
+
   body {
     padding: 0;
     margin: 0;
-    background: url("blurry-gradient-haikei.svg");
+    background: url("/blurry-gradient-haikei.svg");
     background-position: center;
     background-size: cover;
     height: 100vh;
