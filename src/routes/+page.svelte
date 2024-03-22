@@ -168,5 +168,6 @@
 @media only screen and (max-height: 875px) {
   body{
     height: auto;
+  }
 }
 </style>
