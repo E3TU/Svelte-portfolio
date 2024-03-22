@@ -3,7 +3,7 @@
 </script>
 
 <div class="projects">
-  <h3>{$name}:~$ <span class="whitetext">projects</span></h3>
+  <h3>{$name}:~$ <span class="whitetext">Projects</span></h3>
   <div class="project-item">
     <h4>Android password generator</h4>
     <a href="https://github.com/E3TU/Android-passwordgen">GitHub</a>

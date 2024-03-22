@@ -3,7 +3,7 @@
 </script>
 
 <div class="introduction">
-  <h3>{$name}:~$ <span class="whitetext">introduction</span></h3>
+  <h3>{$name}:~$ <span class="whitetext">Introduction</span></h3>
   <h4>Hello👋, I'm Eetu, Software developer from Finland</h4>
 </div>
 

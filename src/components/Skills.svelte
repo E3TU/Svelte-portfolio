@@ -3,7 +3,7 @@
 </script>
 
 <div class="skills">
-  <h3>{$name}:~$ <span class="whitetext">skills</span></h3>
+  <h3>{$name}:~$ <span class="whitetext">Skills</span></h3>
   <div class="flex-item">
     <h4>Web</h4>
     <h5>Html</h5>

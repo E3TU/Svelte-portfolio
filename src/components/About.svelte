@@ -3,7 +3,7 @@
 </script>
 
 <div class="about">
-  <h3>{$name}:~$ <span class="whitetext">about me</span></h3>
+  <h3>{$name}:~$ <span class="whitetext">About me</span></h3>
   <div class="aboutmetext">
     <h4>
       My name is Eetu, I am a passionate software developer currently studying
