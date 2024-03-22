@@ -7,7 +7,7 @@
   import Skills from "../components/Skills.svelte";
   import Projects from "../components/Projects.svelte";
   import Contact from "../components/Contact.svelte";
-  import Footer from "../components/Footer.svelte";
+  import BottomSection from "../components/BottomSection.svelte";
 </script>
 
 <svelte:head>
@@ -33,7 +33,7 @@
       <Skills />
       <Projects />
       <Contact />
-      <Footer />
+      <BottomSection />
     </div>
   </div>
 </body>
